@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import no.hiof.danieljr.pokedex.ui.theme.PokedexTheme
+import no.hiof.danieljr.pokedex.ui.theme.Screens.login
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,9 +22,10 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorSchpeme.background
+                    color = MaterialTheme.colorScheme.background
+                    
                 ) {
-                    login(painter)
+                    login(painer = painterResource(id = R.drawable.pok_dex_logo))
                     
                 }
             }
