@@ -50,7 +50,7 @@ git clone https://github.com/yourusername/kotlin-pokedex.git
 * Retrofit for API requests
 * Gson for JSON parsing
 * Glide for image loading
-* This is stil under development, so technologies maybe alterd.(if so this section wil be changed)
+* This is still under development, so technologies maybe altred.(if so this section will be changed)
 
 ----------------------------------------------------------------------------------------------------------------------------
   
