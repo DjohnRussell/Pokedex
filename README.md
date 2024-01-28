@@ -1,5 +1,5 @@
 
-Pokédex App
+Pokédex App🚀
 
 
 Overview
@@ -20,8 +20,8 @@ Features
 ---------------------------------------------------------------------------------------------------------------------------- 
 
   Prerequisites:
-  * Android Studio
-  * Kotlin installed
+  * Android Studio☑️
+  * Kotlin installed☑️
 ----------------------------------------------------------------------------------------------------------------------------    
 
   Installation
@@ -30,7 +30,7 @@ Clone the repository:
 ----------------------------------------------------------------------------------------------------------------------------
 bash
 Copy code:
-git clone https://github.com/yourusername/kotlin-pokedex.git
+git clone https://github.com/yourusername/kotlin-pokedex.git💻
  
 * Open the project in Android Studio.
 
