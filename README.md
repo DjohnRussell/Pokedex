@@ -32,31 +32,42 @@ Clone the repository:
 bash
 Copy code:
 git clone https://github.com/yourusername/kotlin-pokedex.git
+ 
+* Open the project in Android Studio.
+
+* Build and run the project on an Android device or emulator.
+  Usage
+* Upon launching the app, you'll be presented with a list of Pokémon species.
+* Tap on a Pokémon to view detailed information.
+* Use the search functionality to find specific Pokémon by name or ID.
+* Favorite Pokémon by tapping on the star icon for quick access later.
 ----------------------------------------------------------------------------------------------------------------------------
-Open the project in Android Studio.
+  Technologies Used
+----------------------------------------------------------------------------------------------------------------------------
 
-Build and run the project on an Android device or emulator.
-Usage
-Upon launching the app, you'll be presented with a list of Pokémon species.
-Tap on a Pokémon to view detailed information.
-Use the search functionality to find specific Pokémon by name or ID.
-Favorite Pokémon by tapping on the star icon for quick access later.
-Technologies Used
+* Kotlin
+* Android SDK
+* Retrofit for API requests
+* Gson for JSON parsing
+* Glide for image loading
+* This is stil under development, so technologies maybe alterd.(if so this section wil be changed)
 
-Kotlin
-Android SDK
-Retrofit for API requests
-Gson for JSON parsing
-Glide for image loading
-Contributing
+----------------------------------------------------------------------------------------------------------------------------
+  
+  Contributing
+----------------------------------------------------------------------------------------------------------------------------
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
-
+----------------------------------------------------------------------------------------------------------------------------
 License
+----------------------------------------------------------------------------------------------------------------------------
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
+----------------------------------------------------------------------------------------------------------------------------
 Acknowledgements
+----------------------------------------------------------------------------------------------------------------------------
 
 Pokémon data provided by PokeAPI
 Icons made by Freepik from Flaticon
+
+By Daniel John Russell
