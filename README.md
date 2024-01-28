@@ -1,12 +1,11 @@
 
 Pokédex App
-----------------------------------------------------------------------------------------------------------------------------
+
 
 Overview
-
-
+--------------------
 Welcome to the Kotlin Pokédex App! This is a Pokédex application developed for Android using Kotlin. The app provides a practical user interface for browsing Pokémon information sourced from the open-source API, PokeAPI.
-----------------------------------------------------------------------------------------------------------------------------
+
 
 Features
 ----------------------------------------------------------------------------------------------------------------------------
