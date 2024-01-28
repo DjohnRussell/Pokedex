@@ -1,5 +1,6 @@
 
 Pokédex App
+----------------------------------------------------------------------------------------------------------------------------
 
 Overview
 
@@ -7,16 +8,20 @@ Welcome to the Kotlin Pokédex App! This is a Pokédex application developed for
 
 Features
 
-View information on various Pokémon, including their types, abilities, and base stats.
-Search for Pokémon by name or ID.
-Browse through a comprehensive list of Pokémon species.
-Save favorite Pokémon for quick access.
-Getting Started
+* View information on various Pokémon, including their types, abilities, and base stats.
+  Search for Pokémon by name or ID.
+* Browse through a comprehensive list of Pokémon species.
 
-Prerequisites
-Android Studio
-Kotlin installed
-Installation
+* Save favorite Pokémon for quick access.
+  ----------------------------------------------------------------------------------------------------------------------------
+ Getting Started
+
+  Prerequisites:
+  * Android Studio
+  * Kotlin installed
+
+  Installation
+  ------------------------------------------------------------------------------------------------------------------------------
 Clone the repository:
 bash
 Copy code
