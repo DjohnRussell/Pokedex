@@ -27,8 +27,10 @@ fun LauchApp() {
             startDestination = AppScreen.Welcome.name,
             Modifier.padding(innerPadding)) {
 
-            composable(AppScreen.Welcome.name) { welcome(painer = painterResource(id = R.drawable.pok_dex_logo),
-                click = { navController.navigate(AppScreen.Login.name) })}
+            composable(AppScreen.Welcome.name) {
+                welcome(painer = painterResource(id = R.drawable.pok_dex_logo),
+                click = { navController.navigate(AppScreen.Home.name)})
+            }
 
             composable(AppScreen.Login.name) { login()}
 

@@ -21,7 +21,7 @@ fun welcome (painer: Painter, click: () -> Unit){
         Image(painter = painer, contentDescription = stringResource(R.string.pokedex_logo),
             modifier = Modifier
                 .fillMaxSize()
-                .clickable {click})
+                .clickable {click()})
     }
 
     }
