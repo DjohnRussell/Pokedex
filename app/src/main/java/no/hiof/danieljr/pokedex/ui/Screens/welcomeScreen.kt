@@ -14,7 +14,7 @@ import no.hiof.danieljr.pokedex.R
 
 
 @Composable
-fun welcome (painer: Painter, click: () -> Unit){
+fun welcome(painer: Painter, click: () -> Unit){
 
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
