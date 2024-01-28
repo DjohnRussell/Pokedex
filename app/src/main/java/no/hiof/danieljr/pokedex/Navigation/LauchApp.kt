@@ -21,7 +21,7 @@ fun LauchApp() {
     val navController = rememberNavController()
 
     Scaffold(topBar = {
-        TopAppBar(title = { "Navigation" })
+        TopAppBar(title = { "Gotta catch em all"})
     }) {innerPadding ->
         NavHost(navController = navController,
             startDestination = AppScreen.Welcome.name,
@@ -32,7 +32,8 @@ fun LauchApp() {
                 click = { navController.navigate(AppScreen.Login.name)})
             }
 
-            composable(AppScreen.Login.name) { login(painterResource(id = R.drawable.pok_dex_logo))}
+            composable(AppScreen.Login.name) { login(painterResource(id = R.drawable.pok_dex_logo),
+                takeMeHome = {navController.navigate(AppScreen.Home.name)})}
 
             composable(AppScreen.Home.name) { home()}
 

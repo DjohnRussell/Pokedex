@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -18,17 +19,21 @@ import no.hiof.danieljr.pokedex.R
 
 
 @Composable
-fun login(painter : Painter) {
+fun login(painter : Painter, takeMeHome: () -> Unit) {
 
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
             Image(painter = painter, contentDescription = stringResource(R.string.logo),
-                modifier = Modifier.padding(70.dp))
+                modifier = Modifier)
 
             Spacer(modifier = Modifier.height(45.dp))
 
-            Button(onClick = { /*TODO*/ }) {
+            Button(onClick = { takeMeHome() },
+                modifier = Modifier.padding(120.dp)) {
                 Text(text = stringResource(R.string.login))
+            }
+            Button(onClick = { /*TODO*/ }) {
+                Text(text = "Create an account")
             }
         }
 }
