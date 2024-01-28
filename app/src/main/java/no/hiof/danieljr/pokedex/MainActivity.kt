@@ -6,13 +6,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import no.hiof.danieljr.pokedex.Navigation.LauchApp
 import no.hiof.danieljr.pokedex.ui.theme.PokedexTheme
-import no.hiof.danieljr.pokedex.ui.theme.Screens.login
+import no.hiof.danieljr.pokedex.ui.theme.Screens.welcome
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                     
                 ) {
-                    login(painer = painterResource(id = R.drawable.pok_dex_logo))
+                    LauchApp()
                     
                 }
             }
