@@ -46,7 +46,7 @@ git clone https://github.com/yourusername/kotlin-pokedex.git💻
 
 * Kotlin
 * Android SDK
-* Retrofit for API requests
+* PokeApi and pokekotlin
 * Gson for JSON parsing
 * Glide for image loading
 * This is still under development, so technologies maybe altred.(if so this section will be changed)
