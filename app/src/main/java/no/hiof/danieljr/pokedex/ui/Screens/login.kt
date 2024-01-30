@@ -3,6 +3,7 @@ package no.hiof.danieljr.pokedex.ui.Screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -19,21 +20,28 @@ import no.hiof.danieljr.pokedex.R
 
 
 @Composable
-fun login(painter : Painter, takeMeHome: () -> Unit) {
+fun login(painter : Painter, takeMeHome: () -> Unit, account: () -> Unit) {
 
     Column(horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
             Image(painter = painter, contentDescription = stringResource(R.string.logo),
                 modifier = Modifier)
 
-            Spacer(modifier = Modifier.height(45.dp))
+            Spacer(modifier = Modifier.height(65.dp))
+        
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                buttons(unitFun = takeMeHome, string = "login" )
+                Spacer(modifier = Modifier.height(5.dp))
+                buttons(unitFun = { account() }, string = "create")
+            }
 
-            Button(onClick = { takeMeHome() },
-                modifier = Modifier.padding(120.dp)) {
-                Text(text = stringResource(R.string.login))
-            }
-            Button(onClick = { /*TODO*/ }) {
-                Text(text = "Create an account")
-            }
         }
+}
+
+@Composable
+fun buttons(unitFun : () -> Unit, string: String){
+    Button(onClick = { unitFun() },
+        modifier = Modifier.padding(120.dp)) {
+        Text(text = string)
+    }
 }

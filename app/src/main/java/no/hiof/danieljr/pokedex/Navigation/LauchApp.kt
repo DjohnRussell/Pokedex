@@ -11,6 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import no.hiof.danieljr.pokedex.R
+import no.hiof.danieljr.pokedex.ui.Screens.accountSetUp
 import no.hiof.danieljr.pokedex.ui.Screens.home
 import no.hiof.danieljr.pokedex.ui.Screens.login
 import no.hiof.danieljr.pokedex.ui.theme.Screens.welcome
@@ -33,9 +34,12 @@ fun LauchApp() {
             }
 
             composable(AppScreen.Login.name) { login(painterResource(id = R.drawable.pok_dex_logo),
-                takeMeHome = {navController.navigate(AppScreen.Home.name)})}
+                takeMeHome = {navController.navigate(AppScreen.Home.name)},
+                account = {navController.navigate(AppScreen.account.name)})}
 
             composable(AppScreen.Home.name) { home()}
+
+            composable(AppScreen.account.name) { accountSetUp()}
 
 
         }
