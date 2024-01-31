@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,26 +21,32 @@ import no.hiof.danieljr.pokedex.R
 @Composable
 fun login(painter : Painter, takeMeHome: () -> Unit, account: () -> Unit) {
 
-    Column(horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center) {
-            Image(painter = painter, contentDescription = stringResource(R.string.logo),
-                modifier = Modifier)
+    Column(verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally) {
 
-            Spacer(modifier = Modifier.height(65.dp))
-        
-            Row(verticalAlignment = Alignment.CenterVertically) {
+        loadPainterImage(painter = painter, string = stringResource(R.string.logo))
+
+        Spacer(modifier = Modifier.height(65.dp))
+
+            Row(verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center) {
                 buttons(unitFun = takeMeHome, string = "login" )
-                Spacer(modifier = Modifier.height(5.dp))
-                buttons(unitFun = { account() }, string = "create")
+                buttons(unitFun = { account() }, string = "Create")
             }
-
         }
+}
+
+
+@Composable
+fun loadPainterImage(painter: Painter, string: String) {
+    Image(painter = painter, contentDescription = string)
 }
 
 @Composable
 fun buttons(unitFun : () -> Unit, string: String){
     Button(onClick = { unitFun() },
-        modifier = Modifier.padding(120.dp)) {
+        modifier = Modifier) {
         Text(text = string)
     }
 }
+
