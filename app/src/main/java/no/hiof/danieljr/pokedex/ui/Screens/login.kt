@@ -5,16 +5,18 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
+import com.bumptech.glide.integration.compose.GlideImage
+import no.hiof.danieljr.pokedex.Models.loadImage
 import no.hiof.danieljr.pokedex.R
 
 
@@ -24,7 +26,9 @@ fun login(painter : Painter, takeMeHome: () -> Unit, account: () -> Unit) {
     Column(verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
 
-        loadPainterImage(painter = painter, string = stringResource(R.string.logo))
+
+
+        loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png")
 
         Spacer(modifier = Modifier.height(65.dp))
 
@@ -37,10 +41,6 @@ fun login(painter : Painter, takeMeHome: () -> Unit, account: () -> Unit) {
 }
 
 
-@Composable
-fun loadPainterImage(painter: Painter, string: String) {
-    Image(painter = painter, contentDescription = string)
-}
 
 @Composable
 fun buttons(unitFun : () -> Unit, string: String){
@@ -49,4 +49,6 @@ fun buttons(unitFun : () -> Unit, string: String){
         Text(text = string)
     }
 }
+
+
 
