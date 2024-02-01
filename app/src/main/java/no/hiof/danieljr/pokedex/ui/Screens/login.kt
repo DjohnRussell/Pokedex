@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
@@ -29,9 +30,9 @@ fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 
 
         loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png",
-            250, 250)
+            450, 250)
 
-        Spacer(modifier = Modifier.height(65.dp))
+        Spacer(modifier = Modifier.height(200.dp))
 
             Row(verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center) {
