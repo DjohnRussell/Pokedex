@@ -52,9 +52,13 @@ android {
 }
 
 dependencies {
-
+    //-------------------------------POkeApi -> Wrapper class pokekotlin-------------------------------------------------
     //implementation ("me.sargunvohra.lib:pokekotlin:2.4.0")
+    //-------------------------------------------------------------------------------------------------------------------
+    //Glide -> http image loader
     implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
+    //-------------------------------------------------------------------------------------------------------------------
+    //The usual
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.navigation:navigation-compose:2.7.6")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
