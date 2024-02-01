@@ -30,7 +30,11 @@ fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 
 
         loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png",
+<<<<<<< HEAD
             450, 250)
+=======
+            250, 250)
+>>>>>>> 866dda113e43ed9139aaaf62afc2082032133b9a
 
         Spacer(modifier = Modifier.height(200.dp))
 
