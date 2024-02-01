@@ -21,14 +21,15 @@ import no.hiof.danieljr.pokedex.R
 
 
 @Composable
-fun login(painter : Painter, takeMeHome: () -> Unit, account: () -> Unit) {
+fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 
     Column(verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
 
 
 
-        loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png")
+        loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png",
+            250, 250)
 
         Spacer(modifier = Modifier.height(65.dp))
 

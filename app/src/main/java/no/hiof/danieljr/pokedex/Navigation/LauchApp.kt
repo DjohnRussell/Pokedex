@@ -33,9 +33,8 @@ fun LauchApp() {
                 click = { navController.navigate(AppScreen.Login.name)})
             }
 
-            composable(AppScreen.Login.name) { login(painterResource(id = R.drawable.pok_dex_logo),
-                takeMeHome = {navController.navigate(AppScreen.Home.name)},
-                account = {navController.navigate(AppScreen.account.name)})}
+            composable(AppScreen.Login.name) { login(takeMeHome = { navController.navigate(AppScreen.Home.name)},
+                account = { navController.navigate(AppScreen.account.name)})}
 
             composable(AppScreen.Home.name) { home()}
 
