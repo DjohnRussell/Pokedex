@@ -20,7 +20,7 @@ import no.hiof.danieljr.pokedex.ui.theme.Screens.welcome
 @Composable
 fun LauchApp() {
     val navController = rememberNavController()
-
+//TODO - Topbar and navbar(Buttonbar)-> not implementeded yet, fix it. was thinging to use a pokeball as a icon to home, look into colors.
     Scaffold(topBar = {
         TopAppBar(title = { "Gotta catch em all"})
     }) {innerPadding ->

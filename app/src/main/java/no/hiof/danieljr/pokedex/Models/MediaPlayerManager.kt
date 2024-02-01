@@ -8,7 +8,7 @@ import android.content.Context
 import android.media.MediaPlayer
 import no.hiof.danieljr.pokedex.R
 
-
+//A mediaplayer make too play the them song
 object MediaPlayerManager {
     private var mediaPlayer: MediaPlayer? = null
     private var isMuted = false

@@ -30,7 +30,6 @@ fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 
 
         loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png",
-
             450, 250)
 
 
@@ -47,7 +46,7 @@ fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 }
 
 
-
+//Making a general button, that takes a Unit function as a param -> to navigate to home/account<- to make an account
 @Composable
 fun buttons(unitFun : () -> Unit, string: String){
     Button(onClick = { unitFun() },
