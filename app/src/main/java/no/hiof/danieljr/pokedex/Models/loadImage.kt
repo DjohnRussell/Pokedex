@@ -9,8 +9,9 @@ import com.bumptech.glide.integration.compose.ExperimentalGlideComposeApi
 import com.bumptech.glide.integration.compose.GlideImage
 import no.hiof.danieljr.pokedex.R
 
-// loadImage will load an image using http request and fetch the image you set as the path other parram is to modify the rendering og that image
-//TODO this function only loads the placeholder, which its not correct, need to find a solution for this.
+// loadImage will load an image using http request and fetch the image you set as the path other param is to modify the rendering og that image
+// add to android_manifest.xml -->  <uses-permission android:name="android.permission.INTERNET"/> to allow internet usage
+
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
 fun loadImage(path: String, height: Int, width: Int){

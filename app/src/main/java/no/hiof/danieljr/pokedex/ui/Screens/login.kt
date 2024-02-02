@@ -22,25 +22,23 @@ import no.hiof.danieljr.pokedex.R
 
 
 @Composable
-fun login( takeMeHome: () -> Unit, account: () -> Unit) {
+fun Login( takeMeHome: () -> Unit, account: () -> Unit) {
 
     Column(verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
 
-
+        Spacer(modifier = Modifier.height(50.dp))
 
         loadImage(path = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png",
             450, 250)
-
-
 
 
         Spacer(modifier = Modifier.height(200.dp))
 
             Row(verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.Center) {
-                buttons(unitFun = takeMeHome, string = "login" )
-                buttons(unitFun = { account() }, string = "Create")
+                Buttons(unitFun = takeMeHome, string = "login" )
+                Buttons(unitFun = { account() }, string = "Create")
             }
         }
 }
@@ -48,7 +46,7 @@ fun login( takeMeHome: () -> Unit, account: () -> Unit) {
 
 //Making a general button, that takes a Unit function as a param -> to navigate to home/account<- to make an account
 @Composable
-fun buttons(unitFun : () -> Unit, string: String){
+fun Buttons(unitFun : () -> Unit, string: String){
     Button(onClick = { unitFun() },
         modifier = Modifier) {
         Text(text = string)

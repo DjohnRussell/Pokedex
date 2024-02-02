@@ -11,16 +11,16 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import no.hiof.danieljr.pokedex.R
+import no.hiof.danieljr.pokedex.ui.Screens.Login
 import no.hiof.danieljr.pokedex.ui.Screens.accountSetUp
 import no.hiof.danieljr.pokedex.ui.Screens.home
-import no.hiof.danieljr.pokedex.ui.Screens.login
 import no.hiof.danieljr.pokedex.ui.theme.Screens.welcome
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LauchApp() {
     val navController = rememberNavController()
-//TODO - Topbar and navbar(Buttonbar)-> not implementeded yet, fix it. was thinging to use a pokeball as a icon to home, look into colors.
+//TODO - Topbar and navbar(Buttonbar)-> not implemented yet, fix it. was thinging to use a poke-ball as a icon to home, look into colors.
     Scaffold(topBar = {
         TopAppBar(title = { "Gotta catch em all"})
     }) {innerPadding ->
@@ -33,7 +33,7 @@ fun LauchApp() {
                 click = { navController.navigate(AppScreen.Login.name)})
             }
 
-            composable(AppScreen.Login.name) { login(takeMeHome = { navController.navigate(AppScreen.Home.name)},
+            composable(AppScreen.Login.name) { Login(takeMeHome = { navController.navigate(AppScreen.Home.name)},
                 account = { navController.navigate(AppScreen.account.name)})}
 
             composable(AppScreen.Home.name) { home()}
