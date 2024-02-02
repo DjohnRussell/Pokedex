@@ -33,13 +33,12 @@ fun home() {
         Column(verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally) {
 
-                PokeCard(path = PathsToImages().diglett, height = 350 , width = 250, "Diglett")
+            Text(text = "Pokemon 1st. gen", fontWeight = Bold)
+
+                PokeCard(path = PathsToImages().golduck, height = 350 , width = 250, "Golduck")
 
 
         }
-    
-
-
 
     }
 
@@ -51,7 +50,9 @@ fun PokeCard(path : String, height : Int, width : Int, name: String) {
     ) {
 
         loadImage(path = path, height, width = width)
-        Text(text = name, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
+        Text(text = name, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
+            modifier = Modifier.
+        padding(140.dp))
     }
     }
 
