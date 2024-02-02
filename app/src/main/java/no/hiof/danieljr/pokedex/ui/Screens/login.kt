@@ -21,6 +21,8 @@ import no.hiof.danieljr.pokedex.Models.loadImage
 import no.hiof.danieljr.pokedex.R
 
 
+val pokeballImage : String = "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_1280.png"
+
 @Composable
 fun Login( takeMeHome: () -> Unit, account: () -> Unit) {
 
